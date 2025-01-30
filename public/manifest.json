@@ -3,21 +3,14 @@
   "name": "Gmail Inbox Filter",
   "version": "1.0",
   "description": "Access Gmail Inbox and filter suspicious emails.",
-  "permissions": [
-    "identity",
-    "storage",
-    "scripting",
-    "activeTab"
-  ],
+  "permissions": ["identity", "storage", "scripting", "activeTab"],
   "host_permissions": [
     "https://mail.google.com/*",
     "https://www.googleapis.com/*"
   ],
   "oauth2": {
     "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
-    "scopes": [
-      "https://www.googleapis.com/auth/gmail.readonly"
-    ]
+    "scopes": ["https://www.googleapis.com/auth/gmail.readonly"]
   },
   "background": {
     "service_worker": "background.js"
@@ -33,8 +26,12 @@
     "default_popup": "index.html"
   },
   "icons": {
+<<<<<<< HEAD
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
+=======
+    "16": "logo.png"
+>>>>>>> 563c455800ab9e1eebd1d3e89f7e940130a8f98a
   }
 }
